@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+$color: (
+    primary-dark: (rgba(0,0,0,0.92)),
+    secondary-accent: (#ffffff),
+    secondary-dark: (#f4f2ec),
+    primary-accent:(#e4e4e4),
+    text-color:(#1d1d1d)
+    );
+
+@function color($color-name){
+    @return map-get($color, $color-name)
+}
+
+
+
+body {
+    //background-color: color(primary);
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    color: color(secondary);
+    margin: 0px;
+    
+}
+
+//  .main-images{
+//     width: 1366px;
+//     height: 625px;
+//     background: url('./home-images/guitar.jpg');
+//     background-repeat:no-repeat;
+//     //background-color: aqua;
+// }
+
+// .main-nav{
+//     width: 1366px;
+//     height: 100px;
+//     //background-color: brown;
+//     //opacity: 0.2;
+// }
+
+// .main-logo{
+//     width: 280px;
+//     height:170px;
+//     position: relative;
+//     bottom: 30px;
+//     left: 20px;
+//     background: url('./home-images/pKS.png');
+//     background-repeat: no-repeat;
+// }
+
+// ul{
+//     margin-top: -150px;
+//     margin-left: 780px;
+    
+//     li{
+//         color: ch-color(text-color);
+//         font-size: 20px;
+//         list-style: none;
+//         display: inline;
+//         padding: 40px;
+//     }
+// }
+
